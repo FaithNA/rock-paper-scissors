@@ -39,13 +39,15 @@ function playGame(){
     function playRound(humanChoice, computerChoice){
         if ((humanChoice == "Rock" && computerChoice == "Paper") || (humanChoice == "Paper" && compuerChoice == "Scissors") || (humanChoice == "Scissors" && computerChoice == "Rock")){
             console.log("You lose, computer wins");
-            humanScore++;
+            computerScore++;
         }else if ((computerChoice == "Rock" && humanChoice == "Paper") || (computerChoice == "Paper" && humanChoice == "Scissors") || (computerChoice == "Scissors" && humanChoice == "Rock")){
             console.log("You win, computer loses");
-            computerScore++;
+            humanScore++;
         }else if(computerChoice==humanChoice){
             console.log("It is a draw");
         }
+
+        console.log(humanScore, computerScore);
     }
 
 }
