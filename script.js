@@ -33,7 +33,9 @@ function playGame(){
     }
     
     humanSelection = getHumanChoice();
-    
+
+    console.log(playRound(humanSelection, computerSelection));
+
     function playRound(humanChoice, computerChoice){
         if ((humanChoice == "Rock" && computerChoice == "Paper") || (humanChoice == "Paper" && compuerChoice == "Scissors") || (humanChoice == "Scissors" && computerChoice == "Rock")){
             console.log("You lose, computer wins");
@@ -46,8 +48,20 @@ function playGame(){
         }
     }
 
-    console.log(playRound(humanSelection, computerSelection));
 }
 for (let i=0; i<=4; i++){
     console.log(playGame());
 }
+
+function finalWinner(){
+    if(computerScore>humanScore){
+        console.log("You lose the game");
+    }else if(computerScore==humanScore){
+        console.log("Overall draw");
+    }
+    else if(computerScore<humanScore){
+        console.log("Congrats, you win!!!");
+    }
+}
+
+finalWinner();
