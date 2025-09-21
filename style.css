@@ -1,0 +1,93 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(135deg,#784871 0%, #2c1a4e 10%, #463b78 50%, #784871 100%);
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.game-area{
+    width: 50%;
+    text-align: center;
+}
+.game-rules, .game-info{
+    border-radius: 30px;
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 25%;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.game-rules ul{
+    color: rgba(255, 255, 255, 0.3);
+    list-style: circle;
+}
+
+.game-rules ul:hover, .game-info div:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.game-info div{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* Make the game area have the same glass styling like the other two divs */
+
+/* .game-area{
+    border-radius: 30px;
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 10px;
+} */
+
+ul li {
+    margin-bottom: 10px;
+}
+.score #score-dsp{
+    font-size: 25px;
+}
+#score-text{
+    width: 100%;
+    padding: 20px;
+    border: 0.5px solid white;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+.buttons button{
+    padding: 20px;
+    border-radius: 100%;
+    background-color: #784871;
+    font-size: 40px;
+    margin: 40px;
+    border: 0;
+}
+.buttons button:hover{
+    background-color: #4b2f47;
+}
+
+#reset{
+    width: 100%;
+    padding: 20px;
+    background-color: #784871;
+    border: 0;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#reset:hover{
+    background-color: #4b2f47;
+}
