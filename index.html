@@ -10,49 +10,34 @@
 </head>
 <body>
     <div class="container">
-        <div class="game-rules">
-            <h3>GAME RULES</h3>
-            <ul>
-                <li>Scissors cuts Paper</li>
-                <li>Paper covers Rock</li>
-                <li>Rock crushes Lizard</li>
-                <li>Lizard poisons Spock</li>
-                <li>Spock smashes Scissors</li>
-                <li>Scissors decapitates Lizard</li>
-                <li>Lizard eats Paper</li>
-                <li>Paper disproves Spock</li>
-                <li>Spock vaporizes Rock</li>
-                <li>And, as it always has, Rock crushes Scissors</li>
-            </ul>
-        </div>
-
-
         <div class="game-area">
-            <h1>READY? PLAY!</h1>
 
-            <div class="buttons">
-                <button class="btn-emj" id="rock">✊</button>
-                <button class="btn-emj" id="paper">✋</button>
-                <button class="btn-emj" id="scissors">✌</button>
+            <div class="moves">
+                <div class="human-move">
+                    <p><strong>YOU 🧒</strong></p>
+                    <button class="btn-emj">❓</button>
+                </div>
+                <div class="computer-move">
+                    <p><strong>💻  COMPUTER</strong></p>
+                    <button class="btn-emj">❓</button>
+                </div>
             </div>
-
+            <div class="buttons">
+                    <button class="btn-emj" id="rock">✊</button>
+                    <button class="btn-emj" id="paper">✋</button>
+                    <button class="btn-emj" id="scissors">✌</button>
+                </div>
             <div class="score">
-                <div id="score-dsp"><strong>YOU 🧒   0 : 0  💻  COMPUTER</strong></div>
-                <div id="score-text">Choose your move to start!</div>
+                <div id="score-text">
+                <div id="score-dsp"> <strong><span id="human">0</span> : <span id="computer">0</span>  </strong></div>
+                <p>Choose your move to start!</p>
+            </div>
             </div>
 
             <button id="reset">Reset</button>
         </div>
 
         
-        <div class="game-info">
-            <h3>GAME INFO</h3>
-            <div>
-                <p>Round 1:</p>
-                <p>Round 2:</p>
-                <p>Round 3:</p>
-            </div>
-        </div>
-    </div>
+        
 </body>
 </html>
