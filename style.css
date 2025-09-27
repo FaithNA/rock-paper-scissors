@@ -10,84 +10,91 @@ body{
 .container{
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
-    margin: 0;
     padding: 0;
 }
 .game-area{
     width: 50%;
     text-align: center;
-}
-.game-rules, .game-info{
-    border-radius: 30px;
-    backdrop-filter: blur(10px); 
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    width: 25%;
-    padding: 25px;
-    overflow-y: auto;
-}
-
-.game-rules ul{
-    color: rgba(255, 255, 255, 0.3);
-    list-style: circle;
-}
-
-.game-rules ul:hover, .game-info div:hover{
-    color: rgba(255, 255, 255, 0.7);
-}
-
-
-.game-info div{
-    color: rgba(255, 255, 255, 0.3);
-}
-
-/* Make the game area have the same glass styling like the other two divs */
-
-/* .game-area{
     border-radius: 30px;
     backdrop-filter: blur(10px); 
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     padding: 10px;
-} */
+}
 
+.moves{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.moves .btn-emj{
+    border: 0;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 70px;
+}
 ul li {
     margin-bottom: 10px;
 }
 .score #score-dsp{
-    font-size: 25px;
+    font-size: 50px;
+}
+.moves p{
+    font-size: 30px;
+}
+.score p{
+    font-size: 12px;
 }
 #score-text{
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     border: 0.5px solid white;
     margin: 30px 0;
     border-radius: 30px;
 }
-.buttons button{
+.human-move, .computer-move{
+    width: 50%;
+}
+.human-move p, .computer-move p{
+    margin: 10px 0;
+}
+.human-move p, .score #human{
+    color: rgb(255, 29, 29);
+}
+.computer-move p, .score #computer{
+    color: rgb(81, 81, 255);
+}
+.btn-emj{
     padding: 20px;
     border-radius: 100%;
     background-color: #784871;
     font-size: 40px;
-    margin: 40px;
+    margin: 10px;
     border: 0;
+}
+#rock, #paper, #scissors{
+    font-size: 20px;
 }
 .buttons button:hover{
     background-color: #4b2f47;
 }
 
 #reset{
-    width: 100%;
-    padding: 20px;
+    width: 40%;
+    padding: 10px;
     background-color: #784871;
     border: 0;
     color: white;
     border-radius: 30px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 #reset:hover{
     background-color: #4b2f47;
 }
+
