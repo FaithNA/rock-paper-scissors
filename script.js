@@ -32,6 +32,7 @@ reset.addEventListener("click", ()=>{
     rock.disabled = false;
     paper.disabled = false;
     scissors.disabled = false;
+    message.removeAttribute("style");
 });
 
 function getComputerMove(){
@@ -128,6 +129,7 @@ function gameEnd(){
     }
 
     message.textContent = finalMessage;
+    message.setAttribute("style", "font-weight: bold; font-size: 20px");
     rock.disabled = true;
     paper.disabled = true;
     scissors.disabled = true;
